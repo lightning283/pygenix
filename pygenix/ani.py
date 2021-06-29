@@ -1,19 +1,19 @@
 import sys,time
 import os
-def animatedtext(text):
+def animatedtext(text,time_sleep):
     message = text
     def animation(message):
         for char in message:
             sys.stdout.write(char)
             sys.stdout.flush()
-            time.sleep(0.1)
-    animation(message)
+            time.sleep(time_sleep)
+    animation(message + "\n")
 
-def animatedtextfile(file):
+def animatedtextfile(file , time_sleep):
     message = open(file, "r")
     def animation(message):
         for char in message:
             sys.stdout.write(char)
             sys.stdout.flush()
-            time.sleep(0.1)
+            time.sleep(time_sleep)
     animation(message) 

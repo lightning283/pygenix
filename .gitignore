@@ -1,3 +1,4 @@
 dist/
 pygenix.egg-info/
 pygenix/__pycache__/
+test.py
