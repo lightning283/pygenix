@@ -44,4 +44,3 @@ from pygenix.utils import splatfrom
 print(splatfrom)
 ```
 ![splatform](https://user-images.githubusercontent.com/73960425/123831819-54d08800-d922-11eb-928f-edeb611c97c3.png)
-
