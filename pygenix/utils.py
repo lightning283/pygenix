@@ -1,5 +1,6 @@
 import sys,time
 import os
+import speech_recognition as sr
 def animatedtext(text):
     message = text
     def animation(message):
@@ -17,6 +18,14 @@ def animatedtextfile(file):
             sys.stdout.flush()
             time.sleep(0.1)
     animation(message)
+def voicerec(limit):
+    voice= sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Listening...")
+        audio = voice.listen(source , phrase_time_limit= limit)
+        voicerec.text = voice.recognize_google(audio)
+        voicerec.text = voicerec.text.lower()
+        print(f"--> {voicerec.text}")
 #Platform Check
 
 if os.path.isfile("/bin/pacman") or os.path.isfile("/bin/apt"):
