@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name= "pygenix" ,
-    version = "0.52", 
+    version = "0.6", 
     author="lightning283",
     author_email="deadtarget283@gmail.com",
     description="A Python Package That Contains Text Aimations And Some Useful Utils",
