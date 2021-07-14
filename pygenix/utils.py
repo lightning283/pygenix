@@ -32,8 +32,8 @@ if os.path.isfile("/bin/pacman") or os.path.isfile("/bin/apt"):
     p = "linux"
 if os.path.isfile("/system/build.prop"):
     p = "android"
-if os.path.isdir("/windows"):
-    p = "windows"
+if os.path.isdir("c:"):
+    p = "win"
 if os.path.isfile("/bin/yay"):
     s = "arch"
 if os.path.isfile("/bin/apt"):
