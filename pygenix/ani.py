@@ -1,5 +1,6 @@
 import sys,time
 import os
+from tkinter import Button
 def animatedtext(text,time_sleep):
     message = text
     def animation(message):
